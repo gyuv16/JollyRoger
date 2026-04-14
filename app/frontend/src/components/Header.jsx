@@ -1,4 +1,4 @@
-"import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
 import { companyInfo } from '../data/mock';
@@ -40,44 +40,44 @@ const Header = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className=\"max-w-7xl mx-auto px-6 py-4\">
-        <div className=\"flex items-center justify-between\">
+      <div className="max-w-7xl mx-auto px-6 py-4">
+        <div className="flex items-center justify-between">
           <div 
-            className=\"flex items-center space-x-3 cursor-pointer group\"
+            className="flex items-center space-x-3 cursor-pointer group"
             onClick={() => scrollToSection('hero')}
           >
-            <div className=\"w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-transform duration-300\">
-              <span className=\"text-slate-900 font-bold text-xl\">JR</span>
+            <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-transform duration-300">
+              <span className="text-slate-900 font-bold text-xl">JR</span>
             </div>
             <div>
-              <h1 className=\"text-xl font-bold text-white tracking-tight\">
+              <h1 className="text-xl font-bold text-white tracking-tight">
                 {companyInfo.name}
               </h1>
-              <p className=\"text-xs text-slate-400\">{companyInfo.tagline}</p>
+              <p className="text-xs text-slate-400">{companyInfo.tagline}</p>
             </div>
           </div>
 
-          <nav className=\"hidden lg:flex items-center space-x-8\">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className=\"text-slate-300 hover:text-amber-400 transition-colors duration-300 font-medium text-sm relative group\"
+                className="text-slate-300 hover:text-amber-400 transition-colors duration-300 font-medium text-sm relative group"
               >
                 {item.label}
-                <span className=\"absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 group-hover:w-full transition-all duration-300\"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
             <Button 
               onClick={() => scrollToSection('contact')}
-              className=\"bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-semibold shadow-lg hover:shadow-amber-500/50 transition-all duration-300 transform hover:scale-105\"
+              className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-semibold shadow-lg hover:shadow-amber-500/50 transition-all duration-300 transform hover:scale-105"
             >
               Get Started
             </Button>
           </nav>
 
           <button
-            className=\"lg:hidden text-white p-2\"
+            className="lg:hidden text-white p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -85,20 +85,20 @@ const Header = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className=\"lg:hidden mt-6 pb-6 border-t border-slate-700/50 pt-6 animate-in slide-in-from-top duration-300\">
-            <nav className=\"flex flex-col space-y-4\">
+          <div className="lg:hidden mt-6 pb-6 border-t border-slate-700/50 pt-6 animate-in slide-in-from-top duration-300">
+            <nav className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className=\"text-slate-300 hover:text-amber-400 transition-colors duration-300 font-medium text-left py-2\"
+                  className="text-slate-300 hover:text-amber-400 transition-colors duration-300 font-medium text-left py-2"
                 >
                   {item.label}
                 </button>
               ))}
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className=\"bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-semibold w-full mt-4\"
+                className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-semibold w-full mt-4"
               >
                 Get Started
               </Button>
@@ -111,4 +111,5 @@ const Header = () => {
 };
 
 export default Header;
-"
+
+
