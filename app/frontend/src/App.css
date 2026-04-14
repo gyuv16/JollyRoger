@@ -1,38 +1,4 @@
-
-Action: file_editor str_replace /app/frontend/src/App.css --old-str ".App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}" --new-str "/* 3D Spinning CA Logo Animation */
+/* 3D Spinning CA Logo Animation */
 .ca-logo-3d {
   animation: float 6s ease-in-out infinite;
   perspective: 1000px;
@@ -137,5 +103,5 @@ button, a {
   .backdrop-blur-lg {
     backdrop-filter: blur(24px);
   }
-}"
-Observation: Edit was successful.
+}
+
