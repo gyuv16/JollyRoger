@@ -141,6 +141,4 @@ const Services = () => {
   );
 };
 
-export default Services;
-"
-Observation: calling "initialize": sending "initialize": Bad Request
+
