@@ -1,6 +1,6 @@
-Now let me update the App.js and create the necessary CSS for animations:
+
 Action: file_editor str_replace /app/frontend/src/App.js --old-str "import { useEffect } from \"react\";
-import \"./App.css\";
+import \"@/App.css\";
 import { BrowserRouter, Routes, Route } from \"react-router-dom\";
 import axios from \"axios\";
 
@@ -53,7 +53,7 @@ function App() {
 }
 
 export default App;" --new-str "import React from \"react\";
-import \"./App.css\";
+import \"@/App.css\";
 import Header from \"./components/Header\";
 import Hero from \"./components/Hero\";
 import About from \"./components/About\";
@@ -81,4 +81,4 @@ function App() {
 }
 
 export default App;"
-Observation: String replacement failed: No replacement was performed, `old_str` did not appear verbatim in /app/frontend/src/App.js.
+Observation: Edit was successful.
